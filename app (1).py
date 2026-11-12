@@ -46,7 +46,7 @@ fig2, ax2 = plt.subplots()
 ax2.hist(view["CGPA"], bins=15)
 ax2.set_xlabel("CGPA")
 ax2.set_ylabel("Number of students")
-st.pyplot(fig2
+st.pyplot(fig2)
 # Data table
 st.subheader("First 20 matching students")
 st.dataframe(view.head(20))
