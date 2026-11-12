@@ -18,7 +18,7 @@ df = load_data()
 
 # Sidebar filters
 st.sidebar.header("Filters")
-min_cgpa = st.sidebar.slider("Minimum CGPA", 6.5, 10.0, 8.0, 0.1)
+min_cgpa = st.sidebar.slider("Minimum CGPA", 6.5, 10.0, 9.0, 0.1)
 research = st.sidebar.selectbox("Research experience", ["All", "Yes", "No"])
 
 view = df[df["CGPA"] >= min_cgpa]
