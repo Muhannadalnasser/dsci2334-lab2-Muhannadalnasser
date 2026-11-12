@@ -29,9 +29,9 @@ if research != "All":
 c1, c2, c3, c4 = st.columns(4)
 c1.metric("Students", len(view))
 if len(view) > 0:
-c2.metric("Average CGPA", f"{view['CGPA'].mean():.2f}")
-c3.metric("Average chance", f"{view['Chance of Admit'].mean():.0%}")
-c4.metric("Average GRE", f"{view['GRE Score'].mean():.1f}")
+    c2.metric("Average CGPA", f"{view['CGPA'].mean():.2f}")
+    c3.metric("Average chance", f"{view['Chance of Admit'].mean():.0%}")
+    c4.metric("Average GRE", f"{view['GRE Score'].mean():.1f}")
 else:
     st.warning("No students match these filters. Lower the minimum CGPA.")
 
